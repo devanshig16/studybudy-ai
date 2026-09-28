@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>~*~ StudyBudy AI ~*~ THE FUTURE OF STUDYING!!!</title>
+<style>
+  body {
+    font-family: "Comic Sans MS", "Comic Sans", "Chalkboard SE", cursive;
+    background: #ffff33;
+    color: #000;
+    margin: 0;
+    padding: 0 8px;
+  }
+  .banner {
+    background: #000;
+    color: #39ff14;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 6px 0;
+    text-shadow: 0 0 6px #39ff14, 0 0 12px #ff00ff;
+    border-top: 4px dashed #ff00ff;
+    border-bottom: 4px dashed #00ffff;
+  }
+  h1 {
+    font-size: 58px;
+    color: #ff66ff;
+    text-align: center;
+    text-shadow: 3px 3px 0 #00ffff;
+    margin: 18px 0 4px;
+    animation: wobble 1.2s infinite;
+  }
+  @keyframes wobble { 0%,100% { transform: rotate(-1deg);} 50% { transform: rotate(1deg);} }
+  .blink { animation: blink 0.8s steps(1) infinite; }
+  @keyframes blink { 50% { visibility: hidden; } }
+  .tagline { text-align: center; font-size: 22px; color: #000; }
+  .center { text-align: center; }
+  .btn1 {
+    background: linear-gradient(#ff0000, #ff9900);
+    color: white; font-size: 24px; border: 5px outset #ff9900;
+    padding: 14px 30px; font-family: Impact, sans-serif; cursor: pointer;
+  }
+  .btn2 {
+    background: #00ccff; color: #ffff00; font-size: 13px;
+    border-radius: 30px; border: 2px dotted red; padding: 4px 10px;
+    font-family: "Times New Roman", serif; cursor: pointer;
+  }
+  .btn3 {
+    background: none; border: none; color: #0000ee; text-decoration: underline;
+    font-size: 17px; font-family: "Courier New", monospace; cursor: pointer;
+  }
+  .features { width: 90%; margin: 20px auto; border: 3px ridge #ff00ff; }
+  .features td { padding: 10px; border: 1px solid #ff99ff; color: #000; vertical-align: top; }
+  .features th { background: #ff00ff; color: #ffff00; padding: 6px; }
+  .soon { color: #ff0000; font-size: 11px; font-weight: bold; }
+  .screenshot { display: block; margin: 20px auto; width: 480px; height: 280px; border: 2px solid #999; }
+  #chatbox { width: 70%; margin: 10px auto; background: #fff9a8; border: 2px inset #ccc; padding: 8px; min-height: 60px; color: #000; font-size: 14px; }
+  #askInput { width: 50%; font-family: inherit; font-size: 16px; }
+  .counter { font-family: "Courier New", monospace; background: #000; color: #0f0; padding: 3px 8px; letter-spacing: 3px; border: 2px inset #666; }
+  footer { text-align: center; font-size: 12px; color: #000; padding: 20px 0 40px; }
+  hr { border: 0; height: 6px; background: repeating-linear-gradient(90deg, red 0 20px, orange 20px 40px, lime 40px 60px, cyan 60px 80px, magenta 80px 100px); }
+  .under { text-align: center; }
+  .flash { display:inline-block; width:200px; height:120px; margin:8px; perspective:600px; cursor:pointer; vertical-align:top; }
+  .flash-inner { position:relative; width:100%; height:100%; transition:transform .5s; transform-style:preserve-3d; }
+  .flash.flipped .flash-inner { transform:rotateY(180deg); }
+  .flash-face { position:absolute; inset:0; backface-visibility:hidden; display:flex; align-items:center; justify-content:center; padding:8px; font-size:14px; border:3px dashed #ff00ff; background:#ccffff; color:#000; }
+  .flash-back { transform:rotateY(180deg); background:#ffccff; border-color:#00cc00; }
+  .timer-display { font-family: Impact, sans-serif; font-size:72px; color:#ff0000; text-shadow:3px 3px 0 #000; text-align:center; margin:6px 0; }
+  .btn4 { background:#9900ff; color:#00ff00; border:3px groove #ffcc00; font-family:Georgia, serif; font-size:15px; padding:6px 16px; cursor:pointer; }
+  .guestbook { width:80%; margin:10px auto; border:3px double #0000ff; background:#fff; color:#000; font-family:"Times New Roman", serif; font-size:14px; border-collapse:collapse; }
+  .guestbook td, .guestbook th { border:1px solid #9999ff; padding:4px 8px; }
+  .guestbook th { background:#0000ff; color:#ffff00; }
+</style>
+</head>
+<body>
+
+<div class="banner"><marquee scrollamount="12">🚀🚀 WELCOME TO STUDYBUDY AI!!! THE #1 AI + BLOCKCHAIN STUDY PLATFORM!!! 🔥🔥 DISRUPTING EDUCATION WITH SYNERGY 🔥🔥 WEB3 NATIVE 🧠 POWERED BY THE CLOUD ☁️ SIGN UP NOW!!! 🚀🚀</marquee></div>
+
+<h1>StudyBudy AI</h1>
+<p class="tagline">Revolutionizing the <b>learning paradigm</b> by leveraging <i>AI + blockchain</i> synergy to empower next-gen students in the metaverse!!!</p>
+<p class="center blink" style="color:#ff0000;font-size:20px;">★ NEW!!! ★ NOW WITH MORE AI ★</p>
+
+<div class="center">
+  <button class="btn1" onclick="getStarted()">GET STARTED!!!</button>
+  &nbsp;
+  <button class="btn2" onclick="alert('Learn more coming soon!!')">learn more</button>
+  &nbsp;
+  <button class="btn3" onclick="connectWallet()">[Connect Wallet]</button>
+</div>
+
+<hr>
+
+<h2 class="center" style="color:#000">📸 Screenshot of our App 📸</h2>
+<img class="screenshot" src="app_screenshot_FINAL_v3.png" alt="screenshot">
+<p class="center" style="font-size:11px;color:#000">(screenshot might not load, its fine)</p>
+
+<hr>
+
+<table class="features">
+  <tr><th>Feature</th><th>What it does</th><th>Status</th></tr>
+  <tr><td>🤖 AI Tutor</td><td>Uses AI to help you study with AI</td><td>✅ kinda works</td></tr>
+  <tr><td>⛓️ Blockchain Notes</td><td>Your notes but on the blockchain so they are decentralized</td><td class="soon">COMING SOON</td></tr>
+  <tr><td>🪙 $STUDY Token</td><td>Earn crypto for studying (tokenomics TBD)</td><td class="soon">COMING SOON</td></tr>
+  <tr><td>🥽 VR Classroom</td><td>Metaverse integration</td><td class="soon">COMING SOON</td></tr>
+  <tr><td>📊 Big Data</td><td>Analytics</td><td class="soon">COMING SOON</td></tr>
+</table>
+
+<hr>
+
+<h2 class="center" style="color:#000">💬 Ask The AI!!! 💬</h2>
+<div class="center">
+  <input id="askInput" placeholder="type ur question here...">
+  <button class="btn2" onclick="askAI()">ASK</button>
+</div>
+<div id="chatbox">AI: Hello!! I am StudyBudy AI. Ask me anything!!!</div>
+
+<hr>
+
+<h2 class="center" style="color:#000">🃏 AI Flashcard Maker 🃏 <span class="blink" style="color:red;font-size:14px">BETA!!</span></h2>
+<div class="center">
+  <input id="fcTopic" placeholder="enter a topic (ex: biology)" style="font-family:inherit;font-size:16px;width:260px">
+  <button class="btn4" onclick="makeCards()">⚡ GENERATE WITH AI ⚡</button>
+</div>
+<div class="center" id="cards"><p style="font-size:12px">(click a card to flip it!!)</p></div>
+
+<hr>
+
+<h2 class="center" style="color:#000">⏰ Study Timer!!! ⏰</h2>
+<div class="center">
+  <select id="tMins" style="font-family:inherit;font-size:16px">
+    <option value="0.1">6 seconds (demo)</option><option value="1">1 minute</option><option value="5">5 minutes</option><option value="25">25 minutes (pomodoro)</option>
+  </select>
+  <button class="btn1" style="font-size:16px;padding:6px 14px" onclick="startTimer()">START</button>
+  <button class="btn3" onclick="stopTimer()">stop</button>
+</div>
+<div class="timer-display" id="timer">00:00</div>
+
+<hr>
+
+<h2 class="center" style="color:#000">📖 Sign Our Guestbook!!! 📖</h2>
+<div class="center">
+  Name: <input id="gbName" size="12" style="font-family:inherit">
+  Message: <input id="gbMsg" size="30" style="font-family:inherit">
+  <button class="btn2" onclick="signGuestbook()">Sign!!</button>
+</div>
+<table class="guestbook" id="gb"></table>
+
+<hr>
+
+<div class="under">
+  <p style="color:#000">🚧🚧 THIS SITE IS UNDER CONSTRUCTION 🚧🚧</p>
+  <p style="color:#000">You are visitor number: <span class="counter" id="hits">000000</span></p>
+  <p style="font-size:11px;color:#000">Best viewed in Internet Explorer 6 at 800x600</p>
+</div>
+
+<footer>
+  © 2026 StudyBudy AI Inc. (not a real inc) | Made with ❤️ and Red Bull at 4am | <a href="#" onclick="alert('page not found');return false;">Privacy Policy</a> | <a href="#" onclick="alert('page not found');return false;">Terms</a> | <a href="mailto:team@studybudy.ai">email us</a>
+</footer>
+
+<script>
+  var hits = 1337;
+  try { hits = parseInt(localStorage.getItem('sb_hits') || '1337', 10) + 1; localStorage.setItem('sb_hits', hits); } catch (e) {}
+  document.getElementById('hits').textContent = String(hits).padStart(6, '0');
+
+  function getStarted() {
+    alert('🎉 Thanks for your interest!!! Sign up is coming soon!!! 🎉');
+  }
+  function connectWallet() {
+    alert('Error: MetaMask not detected. Please install MetaMask to use blockchain features.');
+  }
+  var answers = [
+    "Great question!!! The answer involves leveraging AI to synergize your learning outcomes.",
+    "I think the answer is 42. Studies show blockchain improves memory by 300%.",
+    "As an AI, I recommend studying more. Have you tried putting your notes on the blockchain?",
+    "Error 500: AI is thinking too hard. Please try again later.",
+    "The answer is decentralized. Please buy $STUDY tokens to unlock the full answer.",
+    "Hmm I'm not sure but you should definitely study!!! 📚📚"
+  ];
+  function askAI() {
+    var q = document.getElementById('askInput').value.trim();
+    var box = document.getElementById('chatbox');
+    if (!q) { alert('please type a question first'); return; }
+    box.innerHTML += '<br>You: ' + q.replace(/</g, '&lt;') + '<br>AI: <i>thinking...</i>';
+    setTimeout(function () {
+      box.innerHTML = box.innerHTML.replace('<i>thinking...</i>', answers[Math.floor(Math.random() * answers.length)]);
+    }, 1500);
+    document.getElementById('askInput').value = '';
+  }
+
+  // flashcards
+  var fcTemplates = [
+    ["What is {t}?", "{t} is a very important concept that is used in {t}."],
+    ["Why does {t} matter?", "Because of AI and blockchain."],
+    ["Define {t} in 5 words", "It is about {t} stuff."],
+    ["Who invented {t}?", "Scientists (probably)."],
+    ["Is {t} on the exam?", "Yes. Maybe. Ask your professor."],
+    ["Explain {t} like I'm 5", "{t} is like a sandwich but for your brain."]
+  ];
+  function makeCards() {
+    var t = document.getElementById('fcTopic').value.trim().replace(/</g, '&lt;');
+    if (!t) { alert('ENTER A TOPIC!!!'); return; }
+    var box = document.getElementById('cards');
+    box.innerHTML = '<p class="blink" style="color:red">🤖 AI IS GENERATING... 🤖</p>';
+    setTimeout(function () {
+      var picks = fcTemplates.slice().sort(function () { return Math.random() - 0.5; }).slice(0, 3);
+      box.innerHTML = picks.map(function (c) {
+        return '<div class="flash" onclick="this.classList.toggle(\'flipped\')"><div class="flash-inner">' +
+          '<div class="flash-face">' + c[0].replace(/\{t\}/g, t) + '</div>' +
+          '<div class="flash-face flash-back">' + c[1].replace(/\{t\}/g, t) + '</div></div></div>';
+      }).join('') + '<p style="font-size:12px">(click a card to flip it!!) ✨ Generated by StudyBudy AI ✨</p>';
+    }, 1800);
+  }
+
+  // timer
+  var timerId = null;
+  function startTimer() {
+    stopTimer();
+    var left = Math.round(parseFloat(document.getElementById('tMins').value) * 60);
+    var el = document.getElementById('timer');
+    function show() { el.textContent = String(Math.floor(left / 60)).padStart(2, '0') + ':' + String(left % 60).padStart(2, '0'); }
+    show();
+    timerId = setInterval(function () {
+      left--; show();
+      if (left <= 0) { stopTimer(); el.classList.add('blink'); alert("⏰⏰ TIME'S UP!!! GREAT JOB STUDYING!!! 🎉🎉 You earned 0.001 $STUDY tokens (coming soon)"); }
+    }, 1000);
+  }
+  function stopTimer() { clearInterval(timerId); document.getElementById('timer').classList.remove('blink'); }
+
+  // guestbook
+  var gb = [
+    { n: 'xX_Kevin_Xx', m: 'cool site!!! 🔥', d: '9/27/2026' },
+    { n: 'mom', m: 'So proud of you sweetie. How do I use this?', d: '9/26/2026' },
+    { n: 'crypto_bro99', m: 'wen token?', d: '9/25/2026' }
+  ];
+  try { var saved = JSON.parse(localStorage.getItem('sb_gb') || 'null'); if (saved) gb = saved; } catch (e) {}
+  function renderGB() {
+    var esc = function (x) { return String(x).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+    document.getElementById('gb').innerHTML = '<tr><th>Name</th><th>Message</th><th>Date</th></tr>' +
+      gb.map(function (g) { return '<tr><td><b>' + esc(g.n) + '</b></td><td>' + esc(g.m) + '</td><td>' + g.d + '</td></tr>'; }).join('');
+  }
+  function signGuestbook() {
+    var n = document.getElementById('gbName').value.trim(), m = document.getElementById('gbMsg').value.trim();
+    if (!n || !m) { alert('Please fill in BOTH boxes!!!'); return; }
+    gb.unshift({ n: n, m: m, d: new Date().toLocaleDateString() });
+    try { localStorage.setItem('sb_gb', JSON.stringify(gb)); } catch (e) {}
+    document.getElementById('gbName').value = ''; document.getElementById('gbMsg').value = '';
+    renderGB();
+    alert('THANK YOU FOR SIGNING!!! 💖');
+  }
+  renderGB();
+</script>
+</body>
+</html>
